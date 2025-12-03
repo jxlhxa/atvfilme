@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resenhas de filmes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h2>RESENHAS DE FILMES</h2>
-        <h3>por Julia Moreira e Giovana July</h3>
+        <h1>RESENHAS DE FILMES</h1>
+        <h3>Giovana July & Julia Moreira</h3>
     </header>
     <main>
-        <!-- <div class="container">
-            <h1><i class="fa-solid fa-list-check"></i> ToDo List</h1>
-            <form id="form-tarefa">
+        <div class="container">
+            <h1 class="mostre"><i class="fa-regular fa-file-video" 
+                style=" color: #00701c9c; text-shadow: 2px 2px 4px rgba(0,0,0,0.4); margin-right: 8px;"></i>
+                Mostre sua resenha!</h1>
+            <form id="form-filme">
+              <div class="input">
                 <div>
-                    <input type="text" id="titulo" placeholder="Título da tarefa" required>
+                    <input type="text" id="titulo" placeholder="Título do filme" required>
                 </div>
                 <div>
-                    <input type="text" id="descricao" placeholder="Descrição" required>
+                    <input type="text" id="resenha" placeholder="Resenha do filme" required>
                 </div>
                 <div>
-                    <input type="date" id="data" required>
+                    <input type="number" min="0" max="5" step="1" placeholder="Avalie" required>
                 </div>
-                <button type="submit"><i class="fa-solid fa-plus"></i> Adicionar</button>
+               </div> 
+                
+               <div>
+                    <button type="submit" ><i class="fa-solid fa-plus"></i>Enviar resenha</button>
+                </div>
             </form>
             <div>
-                <ul id="lista-tarefas"></ul>
+                <ul id="resenhas-filmes"></ul>
             </div>
-        </div> -->
+        </div>
     </main>
     <footer>
-        <div>ToDo List &copy; 2025 by Giovana e Julia</div>
+        <div>Resenhas de Filmes &copy; 2025 by Giovana e Julia</div>
     </footer>
-    <script src="js/app.js"></script>
 </body>
 </html>
