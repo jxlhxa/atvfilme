@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.post('/', filmespwController.postarFilmes);
 router.get('/', filmespwController.buscarFilmes);
-router.get('/:id', filmespwController.buscarFilmesPorId);
 router.get('/avaliacao/:avaliacao', filmespwController.buscarFilmesPorAvaliacao);
+router.get('/:id', filmespwController.buscarFilmesPorId);
 router.put('/:id', filmespwController.atualizarFilmes);
 router.delete('/:id', filmespwController.deletarFilmes);
 

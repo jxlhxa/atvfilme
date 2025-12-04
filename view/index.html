@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resenhas de filmes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <h1>RESENHAS DE FILMES</h1>
-        <h3>Giovana July & Julia Moreira</h3>
+        <h2>RESENHAS DE FILMES</h2>
+        <h3>por Julia Moreira e Giovana July</h3>
     </header>
     <main>
         <div class="container">
-            <h1 class="mostre"><i class="fa-regular fa-file-video" 
-                style=" color: #00701c9c; text-shadow: 2px 2px 4px rgba(0,0,0,0.4); margin-right: 8px;"></i>
-                Mostre sua resenha!</h1>
-            <form id="form-filme">
-              <div class="input">
+            <h1> Faça sua resenha</h1>
+            <form id="form-tarefa">
                 <div>
                     <input type="text" id="titulo" placeholder="Título do filme" required>
                 </div>
                 <div>
-                    <input type="text" id="resenha" placeholder="Resenha do filme" required>
+                    <input type="text" id="resenha" placeholder="Escreva sua resenha" required>
                 </div>
-                <div>
-                    <input type="number" id="avaliacao" min="0" max="5" step="1" placeholder="Avalie" required>
+                <div class="avaliacoes">
+                    <div class="rating">
+                        <input type="radio" id="estrela5" name="rating" value="5" />
+                        <label for="estrela5">★</label>
+
+                        <input type="radio" id="estrela4" name="rating" value="4" />
+                        <label for="estrela4">★</label>
+
+                        <input type="radio" id="estrela3" name="rating" value="3" />
+                        <label for="estrela3">★</label>
+
+                        <input type="radio" id="estrela2" name="rating" value="2" />
+                        <label for="estrela2">★</label>
+
+                        <input type="radio" id="estrela1" name="rating" value="1" />
+                        <label for="estrela1">★</label>
+                    </div>
                 </div>
-               </div> 
-                
-               <div>
-                    <button type="submit" ><i class="fa-solid fa-plus"></i>Enviar resenha</button>
-                </div>
+               
+                <button type="submit" class="Adicionar"> Adicionar</button>
+            <button type="button" class="Filtrar" id="btn-filtrar">Filtrar</button>
             </form>
             <div>
-                <ul id="resenhas-filmes"></ul>
+                <ul id="lista-tarefas"></ul>
             </div>
         </div>
     </main>
     <footer>
-        <div>Resenhas de Filmes &copy; 2025 by Giovana e Julia</div>
+        <div> Ju&Ju &copy; 2025 by Giovana e Julia</div>
     </footer>
     <script src="js/app.js"></script>
 </body>
+
 </html>

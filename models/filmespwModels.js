@@ -18,8 +18,11 @@ const buscarFilmes = async() => {
 };
 
 const buscarFilmesPorId = async (id) => {
-  const [rows] = await db.query('SELECT * FROM filmes WHERE id_filme = ?', id);
-  return rows [0];
+  const [rows] = await db.query(
+    'SELECT * FROM filmes WHERE id_filme = ?',
+    [id]
+  );
+  return rows[0];
 };
 
 const buscarFilmesPorAvaliacao = async (avaliacao) => {
