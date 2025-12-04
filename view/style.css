@@ -124,7 +124,7 @@ footer {
 .rating label {
     margin-top: 5px;
     font-size: 30px;
-    color: rgb(95, 78, 78);
+    color: "rgb(95, 78, 78)";
     cursor: pointer;
 }
 
