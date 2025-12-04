@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #000000;
+}
+h1{
+    color: white;
+}
+
+header {
+    background: #ad2697;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    background: #ad2697;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#titulo{
+    height: 60px;
+    width: 60% ;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #cc07a1;
+    font-size: 16px;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+
+ }
+ #resenha{
+    height: 100px;
+    width: 100% ;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #cc07a1;
+    font-size: 16px;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+ }
+
+
+/* ======= BOTÃO ======= */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #202020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #383838;
+}
+
+/* ======= LISTA DE RESENHAS ======= */
+#lista-tarefas {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#lista-tarefas li {
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #202020;
+    color: white;
+    margin-top: 40px;
+}
+
+
+
+
+/* estrelinhas */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating input {
+    display: none; /* esconde as bolinhas */
+    
+}
+
+.rating label {
+    margin-top: 5px;
+    font-size: 30px;
+    color: rgb(95, 78, 78);
+    cursor: pointer;
+}
+
+/* quando um input é marcado, pinta ele e todos os labels ANTES dele */
+.rating input:checked ~ label {
+    color: gold;
+}

@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h2>RESENHAS DE FILMES</h2>
         <h3>por Julia Moreira e Giovana July</h3>
     </header>
     <main>
-        <!-- <div class="container">
-            <h1><i class="fa-solid fa-list-check"></i> ToDo List</h1>
+        <div class="container">
+            <h1> Faça sua resenha</h1>
             <form id="form-tarefa">
                 <div>
-                    <input type="text" id="titulo" placeholder="Título da tarefa" required>
+                    <input type="text" id="titulo" placeholder="Título do filme" required>
                 </div>
                 <div>
-                    <input type="text" id="descricao" placeholder="Descrição" required>
+                    <input type="text" id="resenha" placeholder="Escreva sua resenha" required>
                 </div>
-                <div>
-                    <input type="date" id="data" required>
+                <div class="avaliacoes">
+                    <div class="rating">
+                        <input type="radio" id="estrela5" name="rating" value="5" />
+                        <label for="estrela5">★</label>
+
+                        <input type="radio" id="estrela4" name="rating" value="4" />
+                        <label for="estrela4">★</label>
+
+                        <input type="radio" id="estrela3" name="rating" value="3" />
+                        <label for="estrela3">★</label>
+
+                        <input type="radio" id="estrela2" name="rating" value="2" />
+                        <label for="estrela2">★</label>
+
+                        <input type="radio" id="estrela1" name="rating" value="1" />
+                        <label for="estrela1">★</label>
+                    </div>
+                    <!-- <input type="radio" id="avaliacao"  name="avaliacao" min="1" max="5" required> -->
                 </div>
-                <button type="submit"><i class="fa-solid fa-plus"></i> Adicionar</button>
+               
+                <button type="submit" class="Adicionar"> Adicionar</button>
+            <button type="submit" class="Filtrar">Filtrar</button>
             </form>
             <div>
                 <ul id="lista-tarefas"></ul>
             </div>
-        </div> -->
+        </div>
     </main>
     <footer>
-        <div>ToDo List &copy; 2025 by Giovana e Julia</div>
+        <div> Ju&Ju &copy; 2025 by Giovana e Julia</div>
     </footer>
     <script src="js/app.js"></script>
 </body>
+
 </html>
