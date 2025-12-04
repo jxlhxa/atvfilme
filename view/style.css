@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -123,11 +124,19 @@ footer {
 .rating label {
     margin-top: 5px;
     font-size: 30px;
+
     color: rgb(95, 78, 78);
+
+    color: "rgb(95, 78, 78)";
+
     cursor: pointer;
 }
 
 /* quando um input é marcado, pinta ele e todos os labels ANTES dele */
 .rating input:checked ~ label {
     color: gold;
+
 }
+
+
+

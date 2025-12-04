@@ -20,5 +20,16 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxlhxa/atvfilme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jxlhxa/atvfilme/issues"
+  },
+  "homepage": "https://github.com/jxlhxa/atvfilme#readme"
 }
